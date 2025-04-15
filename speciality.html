@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adi's Photo Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #main {
+            background-color: rgb(101, 101, 53);
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #text {
+            color: white;
+            font-size: 60px;
+            margin: 0;
+        }
+
+        #main a {
+            display: inline-block;
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            background-color: #444;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        #para {
+            text-align: center;
+            font-size: 20px;
+            margin: 30px 10px;
+        }
+
+        #photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #photos div {
+            flex: 1 1 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        #photos img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+        }
+
+        #foot {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: black;
+            color: white;
+            padding: 30px 10px;
+        }
+
+        #foot div {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        #foot ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #foot ul li {
+            margin: 8px 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #text {
+                font-size: 40px;
+            }
+
+            #para {
+                font-size: 16px;
+                padding: 0 10px;
+            }
+
+            #main a {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+            #photos{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-evenly;
+            }
+            #photos div{
+                align-self: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="one">
+        <div id="main">
+            <p id="text">Our Specialities</p>
+            <a href="index.html">Home</a>
+        </div>
+    </section>
+
+    <section>
+        <div id="para">
+            We, Adi's Photo Studio, have been providing outstanding and impressive photography since the last 30 years, which makes us one of the best photographic businesses in the city.
+        </div>
+
+        <div id="photos">
+            <div>
+                <img src="https://shital-photo.s3.ap-south-1.amazonaws.com/images/categoryimage/categoryimage153322324462.jpg" alt="Photography 1">
+            </div>
+            <div>
+                <img src="https://shital-photo.s3.ap-south-1.amazonaws.com/images/categoryimage/categoryimage153796009195.jpg" alt="Photography 2">
+            </div>
+        </div>
+    </section>
+
+    <footer id="foot">
+        <div>
+            <ul>
+                <li><strong>Contact</strong></li>
+                <li>Mumbai</li>
+                <li>Delhi</li>
+                <li>Nagpur</li>
+                <li>Beed</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><strong>Quick Links</strong></li>
+                <li>Gallery</li>
+                <li>Specialities</li>
+                <li>About Us</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><strong>Other Pages</strong></li>
+                <li>Testimonial</li>
+                <li>FAQ</li>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

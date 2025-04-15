@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Photography Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #main {
+      width: 100%;
+      height: 400px;
+      background-color: rgb(101, 101, 53);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #text {
+      color: white;
+      font-size: 60px;
+    }
+
+    #main a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    #promt, #yes {
+      padding: 20px;
+      text-align: center;
+    }
+
+    #team, #tea {
+      font-size: 32px;
+      margin: 20px 0;
+    }
+
+    #para, #par {
+      font-size: 18px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    #foot {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: black;
+      color: white;
+      padding: 20px 0;
+    }
+
+    #foot ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #foot ul li {
+      margin: 5px 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+      #text {
+        font-size: 40px;
+      }
+
+      #team, #tea {
+        font-size: 24px;
+      }
+
+      #para, #par {
+        font-size: 16px;
+        padding: 0 15px;
+      }
+
+      #foot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      #foot ul {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="one">
+    <div id="main">
+      <p id="text">Gallery</p>
+      <a href="index.html">Home</a>
+    </div>
+  </section>
+
+  <section id="promt">
+    <h4 id="team">Our Team</h4>
+    <p id="para">
+      At our studio, we have a warm and inviting atmosphere that creates a relaxing and pleasant customer photography experience. We have a group of talented photographers and editors who are specially trained to handle newborn babies, maternity photoshoots, and cake smash sessions with great care and patience.
+    </p>
+  </section>
+
+  <section id="yes">
+    <h4 id="tea">Best Photography in Town</h4>
+    <p id="par">
+      Over the past 30 years, our aesthetic photography studio in town has taken us on a long visual and photographic art journey. We deliver the best results possible with our exceptional quality photography, proficient photographers, and the latest equipment.
+    </p>
+  </section>
+
+  <footer id="foot">
+    <div>
+      <ul>
+        <strong>Contact</strong>
+        <li>Mumbai</li>
+        <li>Delhi</li>
+        <li>Nagpur</li>
+        <li>Beed</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <strong>Quick Links</strong>
+        <li>Gallery</li>
+        <li>Specialties</li>
+        <li>About Us</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <strong>Other Pages</strong>
+        <li>Testimonials</li>
+        <li>FAQ</li>
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
